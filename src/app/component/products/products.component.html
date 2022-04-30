@@ -1,0 +1,25 @@
+<div class="container mt-5">
+<div class="card-group" *ngIf="products.length >0 ">
+    <div class="card" *ngFor="let product of products">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{products.id}} - {{product.name}}</h5>
+        <p class="card-text">{{products.description}}</p>
+        <p class="card-text">{{product.price}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+       
+      <div class="card-footer">
+        <small class="text-muted">last updated 3 mins ago</small>
+        <small class="text-muted">
+          <a href="#"  class="badge badge-danger">edit</a>
+          <a href="#"  class="badge badge-warning">delete</a>
+        </small>
+
+      </div>
+
+
+    </div>
+    
+  </div>
+</div>

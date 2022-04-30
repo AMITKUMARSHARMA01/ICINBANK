@@ -1,0 +1,11 @@
+<div class="container">
+    <div class ="alert alert-info">{{username}}</div>
+    <input type="text" class="formcontrol" name="üsername" (input)="onChange($event)">
+
+</div>
+
+<div class="container">
+    <div class ="alert alert-info">{{message}}</div>
+    <input type="text" class="formcontrol" name="username" [(ngModel)]="message">
+
+</div>
